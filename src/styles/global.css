@@ -61,15 +61,56 @@
   --spacing-stack-lg: 48px;
   --spacing-gutter: 24px;
 
-  --font-body-md: "Inter", sans-serif;
-  --font-display-lg: "Montserrat", sans-serif;
-  --font-headline-md: "Montserrat", sans-serif;
-  --font-body-lg: "Inter", sans-serif;
-  --font-display-lg-mobile: "Montserrat", sans-serif;
-  --font-label-caps: "Montserrat", sans-serif;
+  /* Font Families */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
-@layer components {
+@layer utilities {
+  .text-display-lg {
+    font-family: var(--font-montserrat);
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+  }
+  .text-display-lg-mobile {
+    font-family: var(--font-montserrat);
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+  }
+  .text-headline-md {
+    font-family: var(--font-montserrat);
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+  .text-body-lg {
+    font-family: var(--font-inter);
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .text-body-md {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .text-label-caps {
+    font-family: var(--font-montserrat);
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
@@ -81,10 +122,6 @@
   .reveal.active { 
     opacity: 1; 
     transform: translateY(0); 
-  }
-  .glass-card { 
-    background: rgba(255, 255, 255, 0.8); 
-    backdrop-filter: blur(10px); 
   }
   .masonry { 
     column-count: 2; 
@@ -100,5 +137,11 @@ html {
 }
 
 body {
-  @apply bg-background text-on-background font-body-md text-[16px] leading-[1.6] overflow-x-hidden;
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
