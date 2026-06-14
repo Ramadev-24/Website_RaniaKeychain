@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://website-rania-keyhain.pages.dev/sitemap-index.xml

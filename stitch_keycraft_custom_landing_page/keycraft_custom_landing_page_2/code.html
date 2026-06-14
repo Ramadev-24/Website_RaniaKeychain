@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KeyCraft Custom | Premium Personalized Keychains</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-primary-container": "#572000",
+                    "outline": "#8e7164",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1b1c1c",
+                    "primary": "#a04100",
+                    "secondary-container": "#e2dfde",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e4e2e2",
+                    "surface-container-highest": "#e4e2e2",
+                    "outline-variant": "#e2bfb0",
+                    "primary-fixed": "#ffdbcc",
+                    "on-surface-variant": "#5a4136",
+                    "on-error": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "on-background": "#1b1c1c",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "surface-container-high": "#e9e8e7",
+                    "background": "#fbf9f8",
+                    "secondary-fixed": "#e5e2e1",
+                    "inverse-primary": "#ffb693",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-primary-fixed": "#351000",
+                    "on-primary-fixed-variant": "#7a3000",
+                    "surface": "#fbf9f8",
+                    "tertiary-container": "#989999",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "inverse-surface": "#303031",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "surface-bright": "#fbf9f8",
+                    "surface-container-low": "#f5f3f3",
+                    "inverse-on-surface": "#f2f0f0",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dbdad9",
+                    "on-secondary-container": "#636262",
+                    "tertiary": "#5d5f5f",
+                    "primary-container": "#ff6b00",
+                    "surface-container": "#efeded",
+                    "surface-tint": "#a04100",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-tertiary-container": "#2f3132",
+                    "primary-fixed-dim": "#ffb693",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "container-max": "1280px",
+                    "stack-lg": "48px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "display-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "label-caps": ["Montserrat"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .masonry { column-count: 2; column-gap: 24px; }
+        @media (min-width: 768px) { .masonry { column-count: 3; } }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20 w-full">
+<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed">
+                KeyCraft Custom
+            </div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#categories">Categories</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#why-choose-us">Why Choose Us</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#gallery">Gallery</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#process">Process</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#faq">FAQ</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform duration-200 active:scale-95">
+                WhatsApp Order
+            </button>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="High-resolution lifestyle photograph of custom handcrafted keychains arranged on a minimalist oak table. The lighting is soft and directional, highlighting the textures of wood and polished acrylic. A warm orange gradient subtly overlays the left side of the image, harmonizing with the brand's premium maker-centric aesthetic. The overall mood is sophisticated, clean, and artisanal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjoRrRlkLKq3CrnWR2BMVhxPR1a9VopfN22bGsYBTddL1__kk0_ATsg6qdayaY6Yr8khifcdVht-1AZPrbirF_QQopTNanrr5RK6aHWC-DeeOzUweGJae9nmX7l8s5325R62TTccIjD10Fj7P2tLGQvnEzpS5G0jPlyCfoxVJICQLGDMQknkkGSPk42YN0m_buXbIDNxsP5wWQ3yv0pIdAwws-fCShDqlbzXzCgjEFkTpnkFq3E76KwnblLZKyslw_wk_33jKJoE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/20 to-transparent"></div>
+</div>
+<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+<div class="max-w-2xl text-white">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-sm drop-shadow-lg">
+                    Custom Keychains for Every Occasion
+                </h1>
+<p class="text-body-lg mb-stack-md text-white/90 drop-shadow-md">
+                    Premium, maker-quality craftsmanship for personal expression, gifts, and brand merchandise. Precision-cut and personalized just for you.
+                </p>
+<div class="flex flex-wrap gap-stack-sm">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform active:scale-95 shadow-lg">
+                        Order via WhatsApp
+                    </button>
+<button class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors backdrop-blur-sm">
+                        View Products
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Categories -->
+<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="categories">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Our Collections</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Acrylic -->
+<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A collection of crystal-clear acrylic keychains featuring vibrant, high-definition printed illustrations. The keychains are photographed against a clean, white studio background with soft ambient lighting. The style is modern and sharp, showcasing the glossy finish and precision-cut edges of the acrylic material. Warm orange accents provide a subtle brand connection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLPQM99haJyRfdwx6xYxXM-BcT7dPohA0DDkuv_YESeJb6TbTqYVylfCAOG-rIGkQ6122oByRKyYbNSKQo5W5mekTrWLW5CD6Awf4Fli-opmo99MVce5Zlajm-sJCxlmkmI11h3oDV22SmNoVKE-DFtN5fJ67CDWNjaaSv7wHYyv-z1SrllJDuWsl-J4uKf3nqhqmCpPLKaJJhB1CgavZjrBP1kV_ncz-UOPZhyJSnLQk5sXfySDGbowVEgyztq-J9tdAgMmmltAo"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-headline-md text-primary mb-2">Acrylic Series</h3>
+<p class="text-on-surface-variant text-sm">Vibrant, durable, and crystal-clear prints for modern designs.</p>
+</div>
+</div>
+<!-- Wood -->
+<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300" style="transition-delay: 100ms">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Artisanal wooden keychains crafted from dark walnut and light maple wood. The keychains are laser-engraved with intricate floral patterns and names. Photographed on a textured linen surface with warm, natural sunlight casting soft shadows. The visual style is tactile, organic, and premium, emphasizing the natural grain of the wood and the precision of the engraving." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbrrEfr-1BfALyl7Wx-9Z6LHFh2_oaE1oJvz52lhLB2qlrmqYJGSyuZ9wAwHlDOo2Mcw0xelz3bQUuvEaxPxsw9LL_PnSiRSHn0Q_usFPLmFHd516GenPWXzSM8b5VlJ2GiTqdFv4pQk30W8_7L2CB-v_E2MN3qufan_acF-ORvW23m5KehrPSXVwTlRAKOyjZ1evAVKm_iBBWcTQKPya1NkpxuyuQVjd6w3xtc2baA17NpBVqZhbYNPIkOusyrEC4KRNzg_ZqBmc"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-headline-md text-primary mb-2">Wooden Series</h3>
+<p class="text-on-surface-variant text-sm">Eco-friendly and rustic laser-engraved textures for a timeless feel.</p>
+</div>
+</div>
+<!-- PVC -->
+<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300" style="transition-delay: 200ms">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Flexible 3D PVC rubber keychains in bright, poppy colors. The designs are playful cartoon characters and modern logos. The photography is clean and high-key, using a bright white studio setting. The lighting emphasizes the depth and 3D relief of the rubber material. The color palette is energetic, featuring the brand's signature orange." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzsOKgneZ3UYhpn7djo6_bFpC9UYtjfjLI0nGClMF0_zEvEhexRk56ZJyGwC1uCayjemtjruak5spiIg1XQxQ5wBmU_R78a2AMfhspOqYzRpkRRCgQYJexSzj5CarL6wlgVouDaWb5p0rT9qdny1RTSCDHVIxW9VwK9qGxS99ov1BSR1LByWhHqZ__1MyRMOnbL9uoKI217QG1cpG0qyfy2AagCsNDVZx4BQgUcGpVhNaAuCJvlKYPslf4dCvNlZYb_1ZbgRNZxQs"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-headline-md text-primary mb-2">PVC Custom</h3>
+<p class="text-on-surface-variant text-sm">Flexible, colorful, and tactile 3D rubber designs that last forever.</p>
+</div>
+</div>
+<!-- Merchandise -->
+<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300" style="transition-delay: 300ms">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A collection of branded merchandise items including custom metal tags and enamel pins. The items are arranged artfully on a dark slate background, illuminated by a focused spotlight that creates dramatic highlights and shadows. The aesthetic is industrial-luxe, emphasizing high-quality metal finishes and vibrant enamel colors. The brand's orange color is integrated into the logo elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhj25I8t3_SRRILFATwngaUQeCr3KSk9nyTf5g34JYvg01Y3BvE2WnojLNprQWfdx5FnkIjWw_AYhO_t0Fi1pLt2qrm19VzY8etS5Pqn_pDmbSDgLmnpbHpN2RwVm_1AM6vGmbthD019gkvzoPNv15tyCezMbJkEVPzefew960h2qtzYETkeAX8Afq4l1kmW3lNC1Pr5vFOqLZBEk6MwTk-1WxYD5yrirXO-eFK2v3JPmNG1hBAg1veX03g54KN1eUu4Kd4U4B69Y"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-headline-md text-primary mb-2">Merchandise</h3>
+<p class="text-on-surface-variant text-sm">Bulk personalized solutions for businesses and event souvenirs.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-stack-lg bg-surface-container" id="why-choose-us">
+<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Maker Excellence</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4">edit_note</span>
+<h4 class="font-headline-md mb-2">Custom Design</h4>
+<p class="text-on-surface-variant">We work closely with you to bring your unique vision to life with precision.</p>
+</div>
+<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 100ms">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4">payments</span>
+<h4 class="font-headline-md mb-2">Affordable</h4>
+<p class="text-on-surface-variant">Premium quality materials at competitive prices for single or bulk orders.</p>
+</div>
+<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 200ms">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4">bolt</span>
+<h4 class="font-headline-md mb-2">Fast Production</h4>
+<p class="text-on-surface-variant">Efficient manufacturing pipelines ensure your order is ready in record time.</p>
+</div>
+<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4">workspace_premium</span>
+<h4 class="font-headline-md mb-2">Premium Quality</h4>
+<p class="text-on-surface-variant">Only the highest grade acrylics, woods, and metals used in our products.</p>
+</div>
+<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 100ms">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4">local_shipping</span>
+<h4 class="font-headline-md mb-2">Secure Shipping</h4>
+<p class="text-on-surface-variant">Worldwide shipping with protective packaging for safe arrival.</p>
+</div>
+<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 200ms">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-4">production_quantity_limits</span>
+<h4 class="font-headline-md mb-2">No Minimum</h4>
+<p class="text-on-surface-variant">Whether you need one or a thousand, we treat every order with care.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery (Masonry) -->
+<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="gallery">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Our Gallery</h2>
+<div class="masonry">
+<div class="reveal mb-gutter break-inside-avoid">
+<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" data-alt="A stylized overhead shot of a single, premium custom keychain featuring a minimalist logo. The background is a clean matte-black surface. A single shard of warm orange light cuts across the frame, highlighting the polished metal hardware. The aesthetic is ultra-modern, high-contrast, and luxurious, matching the brand's corporate-modern identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyHkzjyOiwE5QdY-9B9XjzM4PqCVXCfvNMBJpHZtzY84mXU3TMc9OAkgIdK1iWw_3SxJT8GbHMtffGPK4XzVMvPr22UQpZOOoFMkFlyxuE2XYKfTnEv9P0tWr3qxYCDywP4ejpXVAh219JIVmm2Lg1I3641Fo0seM1Ol0-1Yx2T5_2yIlpXg1ZQKeLSLpBhuEnUk3WqwhdHRH9DG5yHaBoGU0eeJcCu-UfQjsTq6ZvalW2p5nIoCox2QVkfVFDdWybYmbaWI6pP_I"/>
+</div>
+<div class="reveal mb-gutter break-inside-avoid">
+<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" data-alt="A vibrant arrangement of multiple colorful keychains with different designs. The lighting is bright and even, simulating a sunny day. The style is playful yet orderly, with the keychains casting short, crisp shadows on a light gray background. The brand's signature orange acts as the dominant color, creating a cohesive visual experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOTr30g8cyZIcMFrigomHpIg1bcI3d04tV7Z1iZwo61wUChZj37rdK2jIqN8kIFIuFB6wzBwYVqR2aWwfPzsrrIksWOIyMyfWopZw5F9ZMV6vHgcmaecQb3w2CyAH2VJ43NQUhQJuS-v_mUqyDUkOZO_hzLSj7YolmPY7uu_KnJMkWqHZrtDx_tKDMKot9BRpW28ZKKCSkWcX9BUtoUFWe4JB79WW86D8fmwOZPAXVZK521Rv_ZD0eywk_2yK5_dzkNEOz6wS9WOQ"/>
+</div>
+<div class="reveal mb-gutter break-inside-avoid">
+<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" data-alt="Close-up detail of a wooden keychain being laser-engraved. Sparks of orange light fly from the focal point where the laser meets the wood. The background is dark and technical, emphasizing the precision of the manufacturing process. The style is dramatic and high-energy, showcasing the brand's commitment to industrial precision and craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFM5s3wCtD2TAtQEEL_LW_9snZbREvG_4TbWZm7BQyONpDXWfTTzozDAOGXR7IFSGZ4exw7ZyxBhElT6FFKyy9Pmr19nugIbKF5whRZh8y10kpDXBd8nKT8jpRZpDtIcd-k0B8jMuGy2VkuXFRiVabCpqXWmxpu2RiCN1xVF3sdcuE435vPfB3rKvEfQMvtVD-LKBF_xtMRXz-CDUTfMsJO8CSXtIW2alqCsLSDbg46De8i9qnTW65ktYvnF255xjXVgMUMqU-yZ4"/>
+</div>
+<div class="reveal mb-gutter break-inside-avoid">
+<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" data-alt="Macro photography of custom keychain hardware, specifically a stainless steel ring and clasp. The focus is incredibly sharp, showing the micro-textures of the metal. The lighting is cool-toned with a single warm orange highlight on the edge of the ring. This image conveys the substantial and reliable physical quality of the products in a premium, corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuBTpKi30XxKI4rVn2cBrKi27STKOFLr5EjP_QvmpmYYVEqlCB_Cc9V3G7DN-uLXnsEngF-PqtcNR5F-aF3RUpTRsIjvHbT6Fdz4NbyKTP9cil5UcD8tgETwOOVQjkrgP4bI9TNbOO7UvWeDrTV4k7_PGMiaFcB-PXuMiiHsMND4vibiDbod-pfGzSPZKUTls_GFRljBsXr_C-DJZGyBtKA05ObbTqw1NK5T8M4QJGXifmsVLmu5z_dYYIdMq3dZ9Z-1lfbEyszhE"/>
+</div>
+<div class="reveal mb-gutter break-inside-avoid">
+<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" data-alt="A clean, minimalist workspace showing a laptop, a notebook, and a single custom KeyCraft keychain. The palette is dominated by whites and light grays, with a single pop of brand orange from the keychain. The mood is professional and organized, targeting design-conscious individuals. High-key lighting creates a spacious, premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTvYk_bz_Bf8NXK1lWPEdZv2buaKEFEc7L4R3BcUB3QcGzLLHXE8TuhrRT_KLmj3IK3LaWsBbWBWH9Nn4Xfi_ORpcHZsU5ZMR7NpNbM5UhmTmkEAoOOTCesaZGyrasy7MT2gPsZXIyPBjL24HAPCr5P1MjrqwOak5KyjI_w-wsgsYtIfNcbuiss5JVL2uQUb-D7GSYX9g_2KaIpxTT6Zes-5nb1o8rpgGCpbLDbUhaalxbnGUvOrqQbmmNZUZLyPPJUO7PffWAch8"/>
+</div>
+<div class="reveal mb-gutter break-inside-avoid">
+<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" data-alt="A close-up of finished, customized keychains in their premium packaging. The packaging is a clean white box with a gold-foiled logo. Soft, diffused lighting creates a gentle, luxurious atmosphere. The composition is elegant and focused, emphasizing the consumer accessibility and gift-ready nature of the brand's products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWFVTuHsj73KiPBJGqBTofGt1GkIWkeVFVQ4llEDSNdX6rSN5DiRcRYd1LkvfQrc0_I-JpJ8jZIOqtXkHC3lvg1-Tc2vlQbdjebTO2BQ98k2KcH_Wm-8k8FGuAhPdZB8ia_H_rUKjlDptuuLNS62DJohP6_B-o61SoxIIyDFmYEHe-SooupNOCoFe9j9JX1HMukC32usRzsUJAiJLJFhDiEhJ4o6bCcjRaE5DDs0c767RPlPv2Lcl7k2vxjMprDp-LSdcRxxrTlC0"/>
+</div>
+</div>
+</section>
+<!-- Ordering Process -->
+<section class="py-stack-lg bg-surface-container-low overflow-hidden" id="process">
+<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">How It Works</h2>
+<div class="relative flex flex-col md:flex-row justify-between gap-stack-md">
+<!-- Line -->
+<div class="absolute top-10 left-0 w-full h-1 bg-outline-variant/30 hidden md:block"></div>
+<!-- Steps -->
+<div class="reveal relative z-10 flex flex-col items-center text-center flex-1">
+<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</div>
+<h5 class="font-bold">Consultation</h5>
+<p class="text-xs text-on-surface-variant px-4">Discuss your ideas via WhatsApp</p>
+</div>
+<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 100ms">
+<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
+<span class="material-symbols-outlined text-3xl">upload_file</span>
+</div>
+<h5 class="font-bold">Send Design</h5>
+<p class="text-xs text-on-surface-variant px-4">Upload your artwork or photo</p>
+</div>
+<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 200ms">
+<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
+<span class="material-symbols-outlined text-3xl">check_circle</span>
+</div>
+<h5 class="font-bold">Confirmation</h5>
+<p class="text-xs text-on-surface-variant px-4">Approve the final digital mockup</p>
+</div>
+<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 300ms">
+<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+</div>
+<h5 class="font-bold">Production</h5>
+<p class="text-xs text-on-surface-variant px-4">We craft your keychains with care</p>
+</div>
+<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 400ms">
+<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
+<span class="material-symbols-outlined text-3xl">local_shipping</span>
+</div>
+<h5 class="font-bold">Shipping</h5>
+<p class="text-xs text-on-surface-variant px-4">Safely packaged and dispatched</p>
+</div>
+<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 500ms">
+<div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
+<span class="material-symbols-outlined text-3xl">celebration</span>
+</div>
+<h5 class="font-bold">Received</h5>
+<p class="text-xs text-on-surface-variant px-4">Your premium custom gear arrives</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Maker Testimonials</h2>
+<div class="flex flex-col md:flex-row gap-gutter overflow-x-auto pb-8 snap-x">
+<div class="reveal min-w-[320px] md:min-w-[400px] bg-white p-stack-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-outline-variant/20 snap-center">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md italic mb-6">"The detail on the acrylic keychain was incredible. I ordered 50 for my cafe and they were a huge hit with customers. Fast delivery too!"</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container"></div>
+<div>
+<p class="font-bold text-on-surface">Adrian S.</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Business Owner</p>
+</div>
+</div>
+</div>
+<div class="reveal min-w-[320px] md:min-w-[400px] bg-white p-stack-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-outline-variant/20 snap-center" style="transition-delay: 100ms">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md italic mb-6">"I got a wooden keychain for my anniversary. The engraving is so sharp and it smells like actual wood. Best personalized gift I've bought."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container"></div>
+<div>
+<p class="font-bold text-on-surface">Maria L.</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Individual Customer</p>
+</div>
+</div>
+</div>
+<div class="reveal min-w-[320px] md:min-w-[400px] bg-white p-stack-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-outline-variant/20 snap-center" style="transition-delay: 200ms">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md italic mb-6">"Excellent communication. They helped me fix my low-res design before printing. That level of service is rare these days. 10/10."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container"></div>
+<div>
+<p class="font-bold text-on-surface">Kevin T.</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Graphic Designer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Marketplace Integration -->
+<section class="py-stack-lg bg-surface-dim">
+<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Shop Where You Are</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Shopee -->
+<div class="reveal p-8 rounded-3xl bg-gradient-to-br from-[#EE4D2D] to-[#FF8C00] text-white flex flex-col justify-between h-64 shadow-xl hover:scale-105 transition-transform cursor-pointer">
+<div class="flex justify-between items-start">
+<span class="font-bold text-xl uppercase tracking-widest">Shopee</span>
+<span class="material-symbols-outlined text-4xl">shopping_cart</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4">KeyCraft on Shopee</h3>
+<button class="bg-white text-[#EE4D2D] px-6 py-2 rounded-full font-bold text-sm">Shop Now</button>
+</div>
+</div>
+<!-- TikTok -->
+<div class="reveal p-8 rounded-3xl bg-black text-white flex flex-col justify-between h-64 shadow-xl hover:scale-105 transition-transform cursor-pointer border border-white/20" style="transition-delay: 100ms">
+<div class="flex justify-between items-start">
+<span class="font-bold text-xl uppercase tracking-widest">TikTok Shop</span>
+<span class="material-symbols-outlined text-4xl text-[#00f2ea]">play_circle</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4">See Our Process Live</h3>
+<button class="bg-[#00f2ea] text-black px-6 py-2 rounded-full font-bold text-sm shadow-[0_0_15px_rgba(0,242,234,0.5)]">Shop Now</button>
+</div>
+</div>
+<!-- WhatsApp -->
+<div class="reveal p-8 rounded-3xl bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white flex flex-col justify-between h-64 shadow-xl hover:scale-105 transition-transform cursor-pointer" style="transition-delay: 200ms">
+<div class="flex justify-between items-start">
+<span class="font-bold text-xl uppercase tracking-widest">Direct</span>
+<span class="material-symbols-outlined text-4xl">chat</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4">Custom Bulk Orders</h3>
+<button class="bg-white text-[#128C7E] px-6 py-2 rounded-full font-bold text-sm">Chat Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter max-w-3xl" id="faq">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Common Questions</h2>
+<div class="space-y-stack-sm">
+<!-- FAQ 1 -->
+<div class="reveal bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden accordion-item">
+<button class="w-full flex items-center justify-between p-stack-md text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-bold">What is the minimum order quantity?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-stack-md pb-0">
+<p class="py-4 text-on-surface-variant">We have no minimum order quantity for most items! Whether you need one custom piece for yourself or 1,000 for your business, we've got you covered.</p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="reveal bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden accordion-item" style="transition-delay: 100ms">
+<button class="w-full flex items-center justify-between p-stack-md text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-bold">How long does production take?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-stack-md pb-0">
+<p class="py-4 text-on-surface-variant">Standard production takes 3-5 business days after design approval. Bulk orders (100+) may take up to 10-14 days depending on complexity.</p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="reveal bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden accordion-item" style="transition-delay: 200ms">
+<button class="w-full flex items-center justify-between p-stack-md text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-bold">Can I send my own hand-drawn art?</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-stack-md pb-0">
+<p class="py-4 text-on-surface-variant">Yes! Just send us a high-quality photo of your sketch. Our designers will vectorize it for free to ensure the best printing or engraving result.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-gutter right-gutter bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform active:scale-95 group" href="https://wa.me/yournumber">
+<span class="material-symbols-outlined text-4xl">chat</span>
+<span class="absolute right-20 bg-white text-on-surface py-2 px-4 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Order via WhatsApp</span>
+</a>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-low full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-md px-margin-mobile md:px-gutter py-stack-lg max-w-container-max mx-auto">
+<div class="space-y-stack-sm">
+<div class="font-display-lg text-headline-md font-bold text-on-surface">KeyCraft Custom</div>
+<p class="text-on-surface-variant text-sm pr-4">Premium personalized maker excellence for everyday carry essentials.</p>
+<p class="text-on-surface-variant text-sm">© 2024 KeyCraft Custom. All rights reserved.</p>
+</div>
+<div>
+<h6 class="font-label-caps text-label-caps text-primary mb-4">Products</h6>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Acrylic Keychains</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Wooden Series</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">PVC Custom</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Merchandise</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-caps text-label-caps text-primary mb-4">Support</h6>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Shipping Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-caps text-label-caps text-primary mb-4">Follow Us</h6>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary-container hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary-container hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">movie</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary-container hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+</div>
+<div class="mt-6">
+<p class="text-xs text-on-surface-variant mb-2">Subscribe to our newsletter</p>
+<div class="flex">
+<input class="bg-surface rounded-l-lg border-none focus:ring-2 focus:ring-primary w-full text-sm" placeholder="Email address" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-r-lg font-bold hover:bg-primary-container transition-colors">Join</button>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Accordion logic
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.material-symbols-outlined');
+            const isActive = item.classList.contains('active-accordion');
+
+            // Close all others
+            document.querySelectorAll('.accordion-item').forEach(acc => {
+                acc.classList.remove('active-accordion');
+                acc.querySelector('div').style.maxHeight = '0';
+                acc.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+                acc.style.borderLeft = 'none';
+            });
+
+            if (!isActive) {
+                item.classList.add('active-accordion');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+                item.style.borderLeft = '4px solid #a04100'; // Primary Orange
+            }
+        }
+    </script>
+</body></html>

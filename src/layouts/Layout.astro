@@ -1,0 +1,85 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Premium Personalized Keychains from KeyCraft Custom. Precision-cut and personalized just for you." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+		
+		<!-- Material Symbols -->
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+		
+		<!-- Open Graph / SEO Pro -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="twitter:card" content="summary_large_image" />
+	</head>
+	<body>
+		<slot />
+		
+		<script>
+			// Scroll reveal animation
+			const observerOptions = {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('active');
+						observer.unobserve(entry.target);
+					}
+				});
+			}, observerOptions);
+
+			document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+			// Accordion logic
+			// @ts-ignore
+			window.toggleAccordion = function(button) {
+				const item = button.parentElement;
+				const content = button.nextElementSibling;
+				const icon = button.querySelector('.material-symbols-outlined');
+				const isActive = item.classList.contains('active-accordion');
+
+				// Close all others
+				document.querySelectorAll('.accordion-item').forEach(acc => {
+					acc.classList.remove('active-accordion');
+					// @ts-ignore
+					acc.querySelector('div').style.maxHeight = '0';
+					// @ts-ignore
+					acc.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+					// @ts-ignore
+					acc.style.borderLeft = 'none';
+				});
+
+				if (!isActive) {
+					item.classList.add('active-accordion');
+					content.style.maxHeight = content.scrollHeight + 'px';
+					icon.style.transform = 'rotate(180deg)';
+					item.style.borderLeft = '4px solid #a04100'; // Primary Orange
+				}
+			}
+		</script>
+	</body>
+</html>
