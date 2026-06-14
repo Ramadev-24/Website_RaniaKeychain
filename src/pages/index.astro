@@ -3,607 +3,116 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="KeyCraft Custom | Premium Personalized Keychains">
-	<!-- =========================================================================
-		 DESAIN KHUSUS MOBILE (Bakal muncul di layar < 768px)
-		 Diambil 100% dari file Mobile lu
-		 ========================================================================= -->
-	<div class="block md:hidden">
-		<!-- Top Navigation Bar -->
-		<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 shadow-sm w-full">
-			<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20 w-full">
-				<span class="font-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</span>
-				<!-- Mobile Menu Toggle -->
-				<button aria-label="Toggle Menu" class="md:hidden text-on-surface p-2" id="mobile-menu-btn-m">
-					<span class="material-symbols-outlined">menu</span>
-				</button>
-				<!-- Desktop Links (Hidden on Mobile) -->
-				<div class="hidden md:flex items-center gap-8">
-					<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps" href="#">Categories</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Why Choose Us</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Gallery</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">Process</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#">FAQ</a>
-					<button class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-bold hover:scale-105 transition-transform duration-200">WhatsApp Order</button>
+	<!-- DESAIN MOBILE (ONLY MOBILE) -->
+	<section class="md:hidden contents">
+		<div class="block w-full">
+			<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 shadow-sm w-full">
+				<div class="flex justify-between items-center px-margin-mobile h-20 w-full">
+					<span class="font-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</span>
+					<button aria-label="Toggle Menu" class="text-on-surface p-2" id="mobile-menu-btn-m">
+						<span class="material-symbols-outlined">menu</span>
+					</button>
 				</div>
-			</div>
-			<!-- Mobile Menu Overlay (Hidden by default) -->
-			<div class="hidden md:hidden absolute top-20 left-0 w-full bg-surface border-b border-outline-variant/30 px-margin-mobile py-stack-md flex flex-col gap-4 shadow-xl transition-all duration-300" id="mobile-menu-m">
-				<a class="text-primary font-bold py-2 font-label-caps text-label-caps" href="#">Categories</a>
-				<a class="text-on-surface-variant font-medium py-2 font-label-caps text-label-caps" href="#">Why Choose Us</a>
-				<a class="text-on-surface-variant font-medium py-2 font-label-caps text-label-caps" href="#">Gallery</a>
-				<a class="text-on-surface-variant font-medium py-2 font-label-caps text-label-caps" href="#">Process</a>
-				<a class="text-on-surface-variant font-medium py-2 font-label-caps text-label-caps" href="#">FAQ</a>
-				<button class="bg-primary-container text-on-primary w-full py-4 rounded-lg font-bold mt-2">WhatsApp Order</button>
-			</div>
-		</nav>
-		<!-- Hero Section -->
-		<section class="px-margin-mobile md:px-gutter pt-stack-md pb-stack-lg flex flex-col items-center text-center max-w-container-max mx-auto overflow-hidden">
-			<div class="max-w-xl mb-stack-md">
-				<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-stack-sm tracking-tight">
+				<div class="hidden absolute top-20 left-0 w-full bg-surface border-b border-outline-variant/30 px-margin-mobile py-stack-md flex flex-col gap-4 shadow-xl" id="mobile-menu-m">
+					<a class="text-primary font-bold py-2 text-label-caps" href="#categories">Categories</a>
+					<a class="text-on-surface-variant font-medium py-2 text-label-caps" href="#why-choose-us">Why Choose Us</a>
+					<a class="text-on-surface-variant font-medium py-2 text-label-caps" href="#gallery">Gallery</a>
+					<button class="bg-primary-container text-on-primary w-full py-4 rounded-lg font-bold mt-2">WhatsApp Order</button>
+				</div>
+			</nav>
+
+			<section class="px-margin-mobile pt-stack-md pb-stack-lg flex flex-col items-center text-center">
+				<h1 class="text-display-lg-mobile text-on-surface mb-stack-sm tracking-tight">
 					Crafting <span class="text-primary">Precision</span> In Every Pocket
 				</h1>
-				<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
-					Premium bespoke keychains for makers, designers, and enthusiasts. Elevate your everyday carry with industrial-grade materials and custom artistry.
+				<p class="text-body-md text-on-surface-variant mb-stack-md">
+					Premium bespoke keychains for makers, designers, and enthusiasts.
 				</p>
-				<div class="flex flex-col gap-4 w-full sm:flex-row sm:justify-center">
-					<button class="bg-primary-container text-on-primary font-bold px-stack-lg py-4 rounded-lg hover:scale-105 active:scale-95 transition-all shadow-lg">Start Customizing</button>
-					<button class="border-2 border-secondary text-secondary font-bold px-stack-lg py-4 rounded-lg hover:bg-secondary hover:text-white transition-all">View Gallery</button>
+				<div class="flex flex-col gap-4 w-full">
+					<button class="bg-primary-container text-on-primary font-bold py-4 rounded-lg">Start Customizing</button>
+					<button class="border-2 border-secondary text-secondary font-bold py-4 rounded-lg">View Gallery</button>
 				</div>
-			</div>
-			<div class="relative w-full aspect-[3/4] md:aspect-[16/9] rounded-xl overflow-hidden mt-stack-md premium-shadow">
-				<img class="w-full h-full object-cover" data-alt="A macro shot of a premium custom-made wooden keychain with precision engraving..." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQaOmW4KnE-cyNB0WIU2i7yb6Gf2b5V93Ygr9aHYVF6rtC1G9NbnPrdGA87Pj9Covrk9gkPHlCF2o0sXr0HDk1jOXBnHAVdhgLlKMtj9WPp0cyjmpE3tXUfue13t2LEE5g9nm2NjE2mFyXDBoiFcqra-FpObbZoj5nNjToYQedXFagMM3JQJv1XeoSpbjbwjrkdTJAqmoJ-yMEDL2jJoNZQnEhWqFYTPnmkydEz_ajtPt5sqBEPNJ0qgEwG2wssz29eM2GqQ9Lxc"/>
-			</div>
-		</section>
-		<!-- Product Categories (Scrollable Horizontal for Mobile) -->
-		<section class="bg-surface-container-low py-stack-lg">
-			<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-				<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-md border-l-4 border-primary pl-4">Categories</h2>
-				<div class="flex gap-stack-sm overflow-x-auto pb-4 custom-scrollbar md:grid md:grid-cols-3 md:gap-stack-md">
-					<!-- Acrylic Card -->
-					<div class="min-w-[280px] bg-white border border-outline-variant/30 rounded-xl p-base flex flex-col group hover:shadow-xl transition-all duration-300">
-						<div class="aspect-square rounded-lg overflow-hidden mb-4">
-							<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgWy27xGUce-GAaMELtr14ccx1USVjv769sPzHvHe-vXUhDlNjqHpYB08JRNoNHwbAGM9f0QSHbry9UHYlftTw2T_Gf248gUfl-daSyqn5llejiYnB6e98AB1XI1AXZRra3uBdg8KVoPSuZ2OhLXh1SFBZ3B6a3Ic7eGw-P_w1zF32Bnfda-7dbq97F6xomHWXtnJ5fXypLg6hCekQFCxkQ4ZBAG5Oi7GkNEMPCywc445Myj7S65o1SvgpI8bdkDj5gDTFKSg5kiY"/>
-						</div>
-						<div class="p-4">
-							<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Acrylic Keychains</h3>
-							<p class="text-on-surface-variant font-body-md text-sm">Ultra-clear, durable material with precision UV printing.</p>
-							<button class="mt-4 text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
-								Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
-							</button>
-						</div>
-					</div>
-					<!-- Wooden Card -->
-					<div class="min-w-[280px] bg-white border border-outline-variant/30 rounded-xl p-base flex flex-col group hover:shadow-xl transition-all duration-300">
-						<div class="aspect-square rounded-lg overflow-hidden mb-4">
-							<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSzbOw4Exx8s53rGbmKvwFEOIwr5m6AEPw88OW0b3PP_Cul29YMl9_JpTgaZSHZwat0bxJo9AlV-oetzIco-psHYZOywrkkDs3xwZZXrT_VG_V8T6F3k877OwIqyz32GUFXLWdoPVf6pJhW71FafPqb2u9sKYDqIIs7JMim3PnCsZRCund9MIoOi8kkJMAWaAGZJmM44MH3vZWWCVI3LcVDTfbv3BKZY4t0Fzi4xAkUTZztaWGL7LVIzjA8eSNFI1jIRTgvQ22NNY"/>
-						</div>
-						<div class="p-4">
-							<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Wooden Series</h3>
-							<p class="text-on-surface-variant font-body-md text-sm">Eco-friendly walnut and oak with deep laser engraving.</p>
-							<button class="mt-4 text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
-								Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
-							</button>
-						</div>
-					</div>
-					<!-- PVC Card -->
-					<div class="min-w-[280px] bg-white border border-outline-variant/30 rounded-xl p-base flex flex-col group hover:shadow-xl transition-all duration-300">
-						<div class="aspect-square rounded-lg overflow-hidden mb-4">
-							<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7die69CTR__lJzJayk4hMszMb0quVTmJtHm2Z3tZoTsfhWAn837b9vq_XFwUKiWSm5jZ16g-uIMl9hY2W1qTFGubZ3Ri54MkyEBTcaJqKqB2XLuVFPMo3pb9u1ejZVL7OCAJ87sNNcktjdRVjevX0DEpaLol-pNID6DSVSjmpmlyC7ZMKFTTlbR8t9PERuM_GFfwYTt0ZyQwbEcpGSLS1kz423W8rejqwkFRRoj8RoTXk26T7cYTTmPHGlYv-utiyhdVUHt_Wguw"/>
-						</div>
-						<div class="p-4">
-							<h3 class="font-headline-md text-headline-md text-on-surface mb-2">PVC Custom</h3>
-							<p class="text-on-surface-variant font-body-md text-sm">3D molded rubberized keychains for high-durability needs.</p>
-							<button class="mt-4 text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
-								Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
-							</button>
-						</div>
-					</div>
+				<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden mt-stack-md">
+					<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQaOmW4KnE-cyNB0WIU2i7yb6Gf2b5V93Ygr9aHYVF6rtC1G9NbnPrdGA87Pj9Covrk9gkPHlCF2o0sXr0HDk1jOXBnHAVdhgLlKMtj9WPp0cyjmpE3tXUfue13t2LEE5g9nm2NjE2mFyXDBoiFcqra-FpObbZoj5nNjToYQedXFagMM3JQJv1XeoSpbjbwjrkdTJAqmoJ-yMEDL2jJoNZQnEhWqFYTPnmkydEz_ajtPt5sqBEPNJ0qgEwG2wssz29eM2GqQ9Lxc"/>
 				</div>
-			</div>
-		</section>
-		<!-- Why Choose Us -->
-		<section class="py-stack-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-			<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg text-center">Why Choose KeyCraft</h2>
-			<div class="flex flex-col gap-stack-md">
-				<div class="flex items-start gap-gutter group">
-					<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg text-primary shrink-0 transition-transform group-hover:scale-110">
-						<span class="material-symbols-outlined">precision_manufacturing</span>
-					</div>
-					<div>
-						<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Industrial Precision</h4>
-						<p class="text-on-surface-variant">We use high-grade CNC and laser machines to ensure every cut is accurate to the micron.</p>
-					</div>
-				</div>
-				<div class="flex items-start gap-gutter group">
-					<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg text-primary shrink-0 transition-transform group-hover:scale-110">
-						<span class="material-symbols-outlined">palette</span>
-					</div>
-					<div>
-						<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Full Customization</h4>
-						<p class="text-on-surface-variant">Upload your design or work with our artists to create a truly unique signature piece.</p>
-					</div>
-				</div>
-				<div class="flex items-start gap-gutter group">
-					<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg text-primary shrink-0 transition-transform group-hover:scale-110">
-						<span class="material-symbols-outlined">rocket_launch</span>
-					</div>
-					<div>
-						<h4 class="font-headline-md text-headline-md text-on-surface mb-1">Fast Prototyping</h4>
-						<p class="text-on-surface-variant">Get your mockups within 24 hours and your bulk orders shipped in record time.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Process Timeline -->
-		<section class="bg-surface-container py-stack-lg">
-			<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-				<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg text-center">The Making Process</h2>
-				<div class="relative pl-8 border-l-2 border-outline-variant/30 flex flex-col gap-stack-lg">
-					<div class="relative">
-						<div class="absolute -left-[41px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-sm"></div>
-						<h4 class="font-headline-md text-headline-md text-on-surface">1. Design Upload</h4>
-						<p class="text-on-surface-variant mt-2">Send us your logo, text, or artwork in any vector format. Our team reviews for optimal machine compatibility.</p>
-					</div>
-					<div class="relative">
-						<div class="absolute -left-[41px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-sm"></div>
-						<h4 class="font-headline-md text-headline-md text-on-surface">2. Digital Mockup</h4>
-						<p class="text-on-surface-variant mt-2">We provide a realistic 3D preview of how your keychain will look with chosen materials and finishes.</p>
-					</div>
-					<div class="relative">
-						<div class="absolute -left-[41px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-sm"></div>
-						<h4 class="font-headline-md text-headline-md text-on-surface">3. Precision Crafting</h4>
-						<p class="text-on-surface-variant mt-2">State-of-the-art machinery carves, prints, and finishes your order with obsessive attention to detail.</p>
-					</div>
-					<div class="relative">
-						<div class="absolute -left-[41px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-sm"></div>
-						<h4 class="font-headline-md text-headline-md text-on-surface">4. Hand Inspection</h4>
-						<p class="text-on-surface-variant mt-2">Each piece undergoes a 5-point quality check before being packed in our premium eco-friendly sleeves.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Gallery Showcase -->
-		<section class="py-stack-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-			<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg border-l-4 border-primary pl-4">Gallery Showcase</h2>
-			<div class="grid grid-cols-2 gap-2">
-				<img class="w-full h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuqct-IoB9QCmrv4t5RVyn0yWVVBEt-00huuDrfMzvcgHYLh_H-yhV2Jc5-JrEfqGjR8WynpvcURsTFefGR4blMjqRDKeoNLPFcmQVE4UScfb2O_iK82TbE-uuV9MC0_H5IyjEsIjplJ7CDYEOCQFZxliAoinD6oT9WK3EDyuiPTFBjSHbJkmgqtlwqIWm4_5hq1jqIz8ceg-ODKLe1Is04W9fOilddFEJxyGS7PAh62PSyNXQ_At5Y6MHBtATbaG88Q6qybSqjhc"/>
-				<img class="w-full h-64 object-cover rounded-lg row-span-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArEywAamDxKd6XomEYfNCUw4CfJqIjGAvNX-YsWn2YFECEUAE5f0bxolJsnVk6DGBbScSHsQtk5-HdQarJnvQhtVOn9LrNpMwnbJ09Lu41Boy8Ne9eYNEqdUfguSX3GJ-qUfdcmwAsBJvwWJeW60lSDALTfr2du535WgfCfHh1qfegVSrHJx05w7E0Kl0kcHmYJZIz-DMOHhvYCXKf395sDJxPparnAVpgaKs5wO5Hf60ddnQqdeNyumNDZnimPzFetfwANWv-QA0"/>
-				<img class="w-full h-40 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUzXxh1StuznhgqCoq588-w5OBpqKumvjJtcYLTYtQFQLJEKCXjNSG7Z4YOeRFxAWSo3ep4wASw-oZz3ON3wIABvDCkhg-M7IRhR4w0TztoAA-AnP8PLHQ0Iur17xMvIDO0_V5MxyuW4ZzpxHGm09_ePqj3OBQd2LwQWCIBy_kwcRbfueCrNm5wPZXMWIlumhDAPLUGH8wlNec-w6e2jwgAkJXr_fNAT6gQoN0ApG8O02iWPByr_GU8jMJ8TBjBOcaK2dTjJZ0mFc"/>
-				<img class="w-full h-48 object-cover rounded-lg col-span-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXgN_qET_KXJEcXQdRGCvWfE__6FvPBvDd2UCG2XBraoxxo7lumFCbPRBp1CXPSpbTDMmj0z1vVs_PGt1C_U-gQXj-2wI6XiwK0U71tVb7hh6WXkYXp_5zxE0-4DqE6ljusAFX9ua4qy1VXh4_9ozOHDlFV2LcbQLYI3xeOKJSnOSohOiSqF-Q3ZnL2ooGY9_f9c4dEM9CZ-h7YlImOGxScS2bqMYB99oby2VuNG-dDiDz75VE1UB-KqEfZtVDXa80cpycRm6sCRQ"/>
-			</div>
-		</section>
-		<!-- FAQ Accordion -->
-		<section class="bg-surface-container-low py-stack-lg px-margin-mobile">
-			<div class="max-w-container-max mx-auto">
-				<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg text-center">Common Questions</h2>
-				<div class="flex flex-col gap-4">
-					<div class="bg-white border border-outline-variant/30 rounded-lg overflow-hidden group">
-						<button class="w-full p-4 flex justify-between items-center text-left" onclick="toggleAccordion(this)">
-							<span class="font-bold text-on-surface">What is the minimum order quantity?</span>
-							<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
-						</button>
-						<div class="max-h-0 overflow-hidden transition-all duration-300 bg-surface-container-lowest">
-							<p class="p-4 text-on-surface-variant">We cater to both individuals and corporate clients. You can order a single custom piece or bulk orders up to 10,000 units.</p>
-						</div>
-					</div>
-					<div class="bg-white border border-outline-variant/30 rounded-lg overflow-hidden group">
-						<button class="w-full p-4 flex justify-between items-center text-left" onclick="toggleAccordion(this)">
-							<span class="font-bold text-on-surface">How long does shipping take?</span>
-							<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
-						</button>
-						<div class="max-h-0 overflow-hidden transition-all duration-300 bg-surface-container-lowest">
-							<p class="p-4 text-on-surface-variant">Custom items typically ship within 5-7 business days after mockup approval.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Footer -->
-		<footer class="bg-surface-container-highest dark:bg-surface-container-low border-t border-outline-variant/30">
-			<div class="px-margin-mobile py-stack-lg text-center">
+			</section>
+
+			<footer class="bg-surface-container-highest py-10 px-margin-mobile text-center">
 				<span class="font-display-lg text-headline-md font-bold text-on-surface">KeyCraft Custom</span>
-				<p class="text-on-surface-variant font-body-md mt-4">Premium maker excellence for the design-conscious community.</p>
-				<p class="text-on-surface-variant font-body-md text-xs mt-6">© 2024 KeyCraft Custom. Premium Maker Excellence.</p>
-			</div>
-		</footer>
-		<!-- WhatsApp FAB Mobile -->
-		<a class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-xl z-[100]" href="#">
-			<svg class="w-10 h-10 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.522-2.961-2.638-.087-.117-.708-.941-.708-1.794 0-.852.448-1.271.607-1.446.16-.175.348-.219.464-.219s.232.001.333.005c.101.004.238-.038.373.284.141.335.485 1.182.527 1.27.042.088.07.19.013.305-.057.114-.085.191-.171.29-.086.099-.18.22-.256.296-.084.084-.171.175-.073.344.099.168.439.724.943 1.174.65.58 1.196.76 1.369.851.174.091.275.076.377-.04.101-.116.435-.507.551-.68.116-.174.232-.145.39-.087s1.001.472 1.175.559c.174.087.29.131.333.204.044.073.044.42-.1.825z"></path></svg>
-		</a>
-	</div>
+				<p class="text-on-surface-variant text-label-caps mt-4">© 2024 KeyCraft Custom.</p>
+			</footer>
+		</div>
+	</section>
 
-	<!-- =========================================================================
-		 DESAIN KHUSUS DESKTOP (Bakal muncul di layar >= 768px)
-		 Diambil 100% dari file Desktop lu
-		 ========================================================================= -->
-	<div class="hidden md:block">
-		<!-- TopNavBar -->
-		<header class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm docked full-width top-0 sticky z-50">
-			<nav class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20 w-full">
-				<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed">
-					KeyCraft Custom
+	<!-- DESAIN DESKTOP (ONLY DESKTOP) -->
+	<section class="hidden md:contents">
+		<div class="block w-full">
+			<header class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm sticky top-0 z-50">
+				<nav class="flex justify-between items-center px-gutter max-w-container-max mx-auto h-20 w-full">
+					<div class="text-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</div>
+					<div class="flex items-center gap-stack-md">
+						<a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-caps" href="#categories">Categories</a>
+						<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-caps" href="#why-choose-us">Why Choose Us</a>
+						<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-caps" href="#gallery">Gallery</a>
+					</div>
+					<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform">WhatsApp Order</button>
+				</nav>
+			</header>
+
+			<section class="relative h-[870px] flex items-center overflow-hidden">
+				<div class="absolute inset-0 z-0">
+					<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjoRrRlkLKq3CrnWR2BMVhxPR1a9VopfN22bGsYBTddL1__kk0_ATsg6qdayaY6Yr8khifcdVht-1AZPrbirF_QQopTNanrr5RK6aHWC-DeeOzUweGJae9nmX7l8s5325R62TTccIjD10Fj7P2tLGQvnEzpS5G0jPlyCfoxVJICQLGDMQknkkGSPk42YN0m_buXbIDNxsP5wWQ3yv0pIdAwws-fCShDqlbzXzCgjEFkTpnkFq3E76KwnblLZKyslw_wk_33jKJoE"/>
+					<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/20 to-transparent"></div>
 				</div>
-				<div class="hidden md:flex items-center gap-stack-md">
-					<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps" href="#categories">Categories</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#why-choose-us">Why Choose Us</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#gallery">Gallery</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#process">Process</a>
-					<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#faq">FAQ</a>
-				</div>
-				<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform duration-200 active:scale-95">
-					WhatsApp Order
-				</button>
-			</nav>
-		</header>
-		<!-- Hero Section -->
-		<section class="relative h-[870px] flex items-center overflow-hidden">
-			<div class="absolute inset-0 z-0">
-				<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjoRrRlkLKq3CrnWR2BMVhxPR1a9VopfN22bGsYBTddL1__kk0_ATsg6qdayaY6Yr8khifcdVht-1AZPrbirF_QQopTNanrr5RK6aHWC-DeeOzUweGJae9nmX7l8s5325R62TTccIjD10Fj7P2tLGQvnEzpS5G0jPlyCfoxVJICQLGDMQknkkGSPk42YN0m_buXbIDNxsP5wWQ3yv0pIdAwws-fCShDqlbzXzCgjEFkTpnkFq3E76KwnblLZKyslw_wk_33jKJoE"/>
-				<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/20 to-transparent"></div>
-			</div>
-			<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
-				<div class="max-w-2xl text-white">
-					<h1 class="font-display-lg text-display-lg mb-stack-sm drop-shadow-lg">
-						Custom Keychains for Every Occasion
-					</h1>
-					<p class="text-body-lg mb-stack-md text-white/90 drop-shadow-md">
-						Premium, maker-quality craftsmanship for personal expression, gifts, and brand merchandise. Precision-cut and personalized just for you.
-					</p>
-					<div class="flex flex-wrap gap-stack-sm">
-						<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform active:scale-95 shadow-lg">
-							Order via WhatsApp
-						</button>
-						<button class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors backdrop-blur-sm">
-							View Products
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Product Categories -->
-		<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="categories">
-			<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Our Collections</h2>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-				<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300">
-					<div class="h-64 overflow-hidden">
-						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLPQM99haJyRfdwx6xYxXM-BcT7dPohA0DDkuv_YESeJb6TbTqYVylfCAOG-rIGkQ6122oByRKyYbNSKQo5W5mekTrWLW5CD6Awf4Fli-opmo99MVce5Zlajm-sJCxlmkmI11h3oDV22SmNoVKE-DFtN5fJ67CDWNjaaSv7wHYyv-z1SrllJDuWsl-J4uKf3nqhqmCpPLKaJJhB1CgavZjrBP1kV_ncz-UOPZhyJSnLQk5sXfySDGbowVEgyztq-J9tdAgMmmltAo"/>
-					</div>
-					<div class="p-stack-md">
-						<h3 class="font-headline-md text-primary mb-2">Acrylic Series</h3>
-						<p class="text-on-surface-variant text-sm">Vibrant, durable, and crystal-clear prints for modern designs.</p>
-					</div>
-				</div>
-				<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300" style="transition-delay: 100ms">
-					<div class="h-64 overflow-hidden">
-						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbrrEfr-1BfALyl7Wx-9Z6LHFh2_oaE1oJvz52lhLB2qlrmqYJGSyuZ9wAwHlDOo2Mcw0xelz3bQUuvEaxPxsw9LL_PnSiRSHn0Q_usFPLmFHd516GenPWXzSM8b5VlJ2GiTqdFv4pQk30W8_7L2CB-v_E2MN3qufan_acF-ORvW23m5KehrPSXVwTlRAKOyjZ1evAVKm_iBBWcTQKPya1NkpxuyuQVjd6w3xtc2baA17NpBVqZhbYNPIkOusyrEC4KRNzg_ZqBmc"/>
-					</div>
-					<div class="p-stack-md">
-						<h3 class="font-headline-md text-primary mb-2">Wooden Series</h3>
-						<p class="text-on-surface-variant text-sm">Eco-friendly and rustic laser-engraved textures for a timeless feel.</p>
-					</div>
-				</div>
-				<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300" style="transition-delay: 200ms">
-					<div class="h-64 overflow-hidden">
-						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzsOKgneZ3UYhpn7djo6_bFpC9UYtjfjLI0nGClMF0_zEvEhexRk56ZJyGwC1uCayjemtjruak5spiIg1XQxQ5wBmU_R78a2AMfhspOqYzRpkRRCgQYJexSzj5CarL6wlgVouDaWb5p0rT9qdny1RTSCDHVIxW9VwK9qGxS99ov1BSR1LByWhHqZ__1MyRMOnbL9uoKI217QG1cpG0qyfy2AagCsNDVZx4BQgUcGpVhNaAuCJvlKYPslf4dCvNlZYb_1ZbgRNZxQs"/>
-					</div>
-					<div class="p-stack-md">
-						<h3 class="font-headline-md text-primary mb-2">PVC Custom</h3>
-						<p class="text-on-surface-variant text-sm">Flexible, colorful, and tactile 3D rubber designs that last forever.</p>
-					</div>
-				</div>
-				<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(95,94,94,0.1)] hover:-translate-y-2 transition-all duration-300" style="transition-delay: 300ms">
-					<div class="h-64 overflow-hidden">
-						<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhj25I8t3_SRRILFATwngaUQeCr3KSk9nyTf5g34JYvg01Y3BvE2WnojLNprQWfdx5FnkIjWw_AYhO_t0Fi1pLt2qrm19VzY8etS5Pqn_pDmbSDgLmnpbHpN2RwVm_1AM6vGmbthD019gkvzoPNv15tyCezMbJkEVPzefew960h2qtzYETkeAX8Afq4l1kmW3lNC1Pr5vFOqLZBEk6MwTk-1WxYD5yrirXO-eFK2v3JPmNG1hBAg1veX03g54KN1eUu4Kd4U4B69Y"/>
-					</div>
-					<div class="p-stack-md">
-						<h3 class="font-headline-md text-primary mb-2">Merchandise</h3>
-						<p class="text-on-surface-variant text-sm">Bulk personalized solutions for businesses and event souvenirs.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Why Choose Us -->
-		<section class="py-stack-lg bg-surface-container" id="why-choose-us">
-			<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-				<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Maker Excellence</h2>
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-					<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm">
-						<span class="material-symbols-outlined text-primary-container text-5xl mb-4">edit_note</span>
-						<h4 class="font-headline-md mb-2">Custom Design</h4>
-						<p class="text-on-surface-variant">We work closely with you to bring your unique vision to life with precision.</p>
-					</div>
-					<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 100ms">
-						<span class="material-symbols-outlined text-primary-container text-5xl mb-4">payments</span>
-						<h4 class="font-headline-md mb-2">Affordable</h4>
-						<p class="text-on-surface-variant">Premium quality materials at competitive prices for single or bulk orders.</p>
-					</div>
-					<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 200ms">
-						<span class="material-symbols-outlined text-primary-container text-5xl mb-4">bolt</span>
-						<h4 class="font-headline-md mb-2">Fast Production</h4>
-						<p class="text-on-surface-variant">Efficient manufacturing pipelines ensure your order is ready in record time.</p>
-					</div>
-					<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm">
-						<span class="material-symbols-outlined text-primary-container text-5xl mb-4">workspace_premium</span>
-						<h4 class="font-headline-md mb-2">Premium Quality</h4>
-						<p class="text-on-surface-variant">Only the highest grade acrylics, woods, and metals used in our products.</p>
-					</div>
-					<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 100ms">
-						<span class="material-symbols-outlined text-primary-container text-5xl mb-4">local_shipping</span>
-						<h4 class="font-headline-md mb-2">Secure Shipping</h4>
-						<p class="text-on-surface-variant">Worldwide shipping with protective packaging for safe arrival.</p>
-					</div>
-					<div class="reveal flex flex-col items-center text-center p-stack-md bg-white rounded-xl shadow-sm" style="transition-delay: 200ms">
-						<span class="material-symbols-outlined text-primary-container text-5xl mb-4">production_quantity_limits</span>
-						<h4 class="font-headline-md mb-2">No Minimum</h4>
-						<p class="text-on-surface-variant">Whether you need one or a thousand, we treat every order with care.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Gallery -->
-		<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="gallery">
-			<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Our Gallery</h2>
-			<div class="masonry">
-				<div class="reveal mb-gutter break-inside-avoid">
-					<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyHkzjyOiwE5QdY-9B9XjzM4PqCVXCfvNMBJpHZtzY84mXU3TMc9OAkgIdK1iWw_3SxJT8GbHMtffGPK4XzVMvPr22UQpZOOoFMkFlyxuE2XYKfTnEv9P0tWr3qxYCDywP4ejpXVAh219JIVmm2Lg1I3641Fo0seM1Ol0-1Yx2T5_2yIlpXg1ZQKeLSLpBhuEnUk3WqwhdHRH9DG5yHaBoGU0eeJcCu-UfQjsTq6ZvalW2p5nIoCox2QVkfVFDdWybYmbaWI6pP_I"/>
-				</div>
-				<div class="reveal mb-gutter break-inside-avoid">
-					<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOTr30g8cyZIcMFrigomHpIg1bcI3d04tV7Z1iZwo61wUChZj37rdK2jIqN8kIFIuFB6wzBwYVqR2aWwfPzsrrIksWOIyMyfWopZw5F9ZMV6vHgcmaecQb3w2CyAH2VJ43NQUhQJuS-v_mUqyDUkOZO_hzLSj7YolmPY7uu_KnJMkWqHZrtDx_tKDMKot9BRpW28ZKKCSkWcX9BUtoUFWe4JB79WW86D8fmwOZPAXVZK521Rv_ZD0eywk_2yK5_dzkNEOz6wS9WOQ"/>
-				</div>
-				<div class="reveal mb-gutter break-inside-avoid">
-					<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFM5s3wCtD2TAtQEEL_LW_9snZbREvG_4TbWZm7BQyONpDXWfTTzozDAOGXR7IFSGZ4exw7ZyxBhElT6FFKyy9Pmr19nugIbKF5whRZh8y10kpDXBd8nKT8jpRZpDtIcd-k0B8jMuGy2VkuXFRiVabCpqXWmxpu2RiCN1xVF3sdcuE435vPfB3rKvEfQMvtVD-LKBF_xtMRXz-CDUTfMsJO8CSXtIW2alqCsLSDbg46De8i9qnTW65ktYvnF255xjXVgMUMqU-yZ4"/>
-				</div>
-				<div class="reveal mb-gutter break-inside-avoid">
-					<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuBTpKi30XxKI4rVn2cBrKi27STKOFLr5EjP_QvmpmYYVEqlCB_Cc9V3G7DN-uLXnsEngF-PqtcNR5F-aF3RUpTRsIjvHbT6Fdz4NbyKTP9cil5UcD8tgETwOOVQjkrgP4bI9TNbOO7UvWeDrTV4k7_PGMiaFcB-PXuMiiHsMND4vibiDbod-pfGzSPZKUTls_GFRljBsXr_C-DJZGyBtKA05ObbTqw1NK5T8M4QJGXifmsVLmu5z_dYYIdMq3dZ9Z-1lfbEyszhE"/>
-				</div>
-				<div class="reveal mb-gutter break-inside-avoid">
-					<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTvYk_bz_Bf8NXK1lWPEdZv2buaKEFEc7L4R3BcUB3QcGzLLHXE8TuhrRT_KLmj3IK3LaWsBbWBWH9Nn4Xfi_ORpcHZsU5ZMR7NpNbM5UhmTmkEAoOOTCesaZGyrasy7MT2gPsZXIyPBjL24HAPCr5P1MjrqwOak5KyjI_w-wsgsYtIfNcbuiss5JVL2uQUb-D7GSYX9g_2KaIpxTT6Zes-5nb1o8rpgGCpbLDbUhaalxbnGUvOrqQbmmNZUZLyPPJUO7PffWAch8"/>
-				</div>
-				<div class="reveal mb-gutter break-inside-avoid">
-					<img class="w-full rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWFVTuHsj73KiPBJGqBTofGt1GkIWkeVFVQ4llEDSNdX6rSN5DiRcRYd1LkvfQrc0_I-JpJ8jZIOqtXkHC3lvg1-Tc2vlQbdjebTO2BQ98k2KcH_Wm-8k8FGuAhPdZB8ia_H_rUKjlDptuuLNS62DJohP6_B-o61SoxIIyDFmYEHe-SooupNOCoFe9j9JX1HMukC32usRzsUJAiJLJFhDiEhJ4o6bCcjRaE5DDs0c767RPlPv2Lcl7k2vxjMprDp-LSdcRxxrTlC0"/>
-				</div>
-			</div>
-		</section>
-		<!-- Ordering Process -->
-		<section class="py-stack-lg bg-surface-container-low overflow-hidden" id="process">
-			<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-				<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">How It Works</h2>
-				<div class="relative flex flex-col md:flex-row justify-between gap-stack-md">
-					<div class="absolute top-10 left-0 w-full h-1 bg-outline-variant/30 hidden md:block"></div>
-					<div class="reveal relative z-10 flex flex-col items-center text-center flex-1">
-						<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
-							<span class="material-symbols-outlined text-3xl">chat</span>
-						</div>
-						<h5 class="font-bold">Consultation</h5>
-						<p class="text-xs text-on-surface-variant px-4">Discuss your ideas via WhatsApp</p>
-					</div>
-					<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 100ms">
-						<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
-							<span class="material-symbols-outlined text-3xl">upload_file</span>
-						</div>
-						<h5 class="font-bold">Send Design</h5>
-						<p class="text-xs text-on-surface-variant px-4">Upload your artwork or photo</p>
-					</div>
-					<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 200ms">
-						<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
-							<span class="material-symbols-outlined text-3xl">check_circle</span>
-						</div>
-						<h5 class="font-bold">Confirmation</h5>
-						<p class="text-xs text-on-surface-variant px-4">Approve the final digital mockup</p>
-					</div>
-					<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 300ms">
-						<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
-							<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
-						</div>
-						<h5 class="font-bold">Production</h5>
-						<p class="text-xs text-on-surface-variant px-4">We craft your keychains with care</p>
-					</div>
-					<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 400ms">
-						<div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
-							<span class="material-symbols-outlined text-3xl">local_shipping</span>
-						</div>
-						<h5 class="font-bold">Shipping</h5>
-						<p class="text-xs text-on-surface-variant px-4">Safely packaged and dispatched</p>
-					</div>
-					<div class="reveal relative z-10 flex flex-col items-center text-center flex-1" style="transition-delay: 500ms">
-						<div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mb-4 border-4 border-white shadow-md">
-							<span class="material-symbols-outlined text-3xl">celebration</span>
-						</div>
-						<h5 class="font-bold">Received</h5>
-						<p class="text-xs text-on-surface-variant px-4">Your premium custom gear arrives</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Testimonials -->
-		<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-			<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Maker Testimonials</h2>
-			<div class="flex flex-col md:flex-row gap-gutter overflow-x-auto pb-8 snap-x">
-				<div class="reveal min-w-[320px] md:min-w-[400px] bg-white p-stack-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-outline-variant/20 snap-center">
-					<div class="flex text-primary mb-4">
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-					</div>
-					<p class="text-body-md italic mb-6">"The detail on the acrylic keychain was incredible. I ordered 50 for my cafe and they were a huge hit with customers. Fast delivery too!"</p>
-					<div class="flex items-center gap-3">
-						<div class="w-10 h-10 rounded-full bg-secondary-container"></div>
-						<div>
-							<p class="font-bold text-on-surface">Adrian S.</p>
-							<p class="text-xs text-on-surface-variant uppercase tracking-widest">Business Owner</p>
+				<div class="container max-w-container-max mx-auto px-gutter relative z-10">
+					<div class="max-w-2xl text-white">
+						<h1 class="text-display-lg mb-stack-sm drop-shadow-lg">
+							Custom Keychains for Every Occasion
+						</h1>
+						<p class="text-body-lg mb-stack-md text-white/90 drop-shadow-md">
+							Premium, maker-quality craftsmanship for personal expression, gifts, and brand merchandise. Precision-cut and personalized just for you.
+						</p>
+						<div class="flex gap-stack-sm">
+							<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold shadow-lg">Order via WhatsApp</button>
+							<button class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold backdrop-blur-sm">View Products</button>
 						</div>
 					</div>
 				</div>
-				<div class="reveal min-w-[320px] md:min-w-[400px] bg-white p-stack-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-outline-variant/20 snap-center" style="transition-delay: 100ms">
-					<div class="flex text-primary mb-4">
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-					</div>
-					<p class="text-body-md italic mb-6">"I got a wooden keychain for my anniversary. The engraving is so sharp and it smells like actual wood. Best personalized gift I've bought."</p>
-					<div class="flex items-center gap-3">
-						<div class="w-10 h-10 rounded-full bg-secondary-container"></div>
-						<div>
-							<p class="font-bold text-on-surface">Maria L.</p>
-							<p class="text-xs text-on-surface-variant uppercase tracking-widest">Individual Customer</p>
+			</section>
+
+			<section class="py-stack-lg container max-w-container-max mx-auto px-gutter" id="categories-desktop">
+				<h2 class="text-display-lg text-headline-md text-center mb-stack-lg">Our Collections</h2>
+				<div class="grid grid-cols-4 gap-gutter">
+					<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-sm">
+						<div class="h-64 overflow-hidden">
+							<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLPQM99haJyRfdwx6xYxXM-BcT7dPohA0DDkuv_YESeJb6TbTqYVylfCAOG-rIGkQ6122oByRKyYbNSKQo5W5mekTrWLW5CD6Awf4Fli-opmo99MVce5Zlajm-sJCxlmkmI11h3oDV22SmNoVKE-DFtN5fJ67CDWNjaaSv7wHYyv-z1SrllJDuWsl-J4uKf3nqhqmCpPLKaJJhB1CgavZjrBP1kV_ncz-UOPZhyJSnLQk5sXfySDGbowVEgyztq-J9tdAgMmmltAo"/>
+						</div>
+						<div class="p-stack-md">
+							<h3 class="font-headline-md text-primary mb-2">Acrylic Series</h3>
+							<p class="text-on-surface-variant text-sm">Vibrant, durable, and crystal-clear prints.</p>
 						</div>
 					</div>
 				</div>
-				<div class="reveal min-w-[320px] md:min-w-[400px] bg-white p-stack-md rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-outline-variant/20 snap-center" style="transition-delay: 200ms">
-					<div class="flex text-primary mb-4">
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-						<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-					</div>
-					<p class="text-body-md italic mb-6">"Excellent communication. They helped me fix my low-res design before printing. That level of service is rare these days. 10/10."</p>
-					<div class="flex items-center gap-3">
-						<div class="w-10 h-10 rounded-full bg-secondary-container"></div>
-						<div>
-							<p class="font-bold text-on-surface">Kevin T.</p>
-							<p class="text-xs text-on-surface-variant uppercase tracking-widest">Graphic Designer</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Marketplace Integration -->
-		<section class="py-stack-lg bg-surface-dim">
-			<div class="container max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-				<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Shop Where You Are</h2>
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-					<!-- Shopee -->
-					<div class="reveal p-8 rounded-3xl bg-gradient-to-br from-[#EE4D2D] to-[#FF8C00] text-white flex flex-col justify-between h-64 shadow-xl hover:scale-105 transition-transform cursor-pointer">
-						<div class="flex justify-between items-start">
-							<span class="font-bold text-xl uppercase tracking-widest">Shopee</span>
-							<span class="material-symbols-outlined text-4xl">shopping_cart</span>
-						</div>
-						<div>
-							<h3 class="text-2xl font-bold mb-4">KeyCraft on Shopee</h3>
-							<button class="bg-white text-[#EE4D2D] px-6 py-2 rounded-full font-bold text-sm">Shop Now</button>
-						</div>
-					</div>
-					<!-- TikTok -->
-					<div class="reveal p-8 rounded-3xl bg-black text-white flex flex-col justify-between h-64 shadow-xl hover:scale-105 transition-transform cursor-pointer border border-white/20" style="transition-delay: 100ms">
-						<div class="flex justify-between items-start">
-							<span class="font-bold text-xl uppercase tracking-widest">TikTok Shop</span>
-							<span class="material-symbols-outlined text-4xl text-[#00f2ea]">play_circle</span>
-						</div>
-						<div>
-							<h3 class="text-2xl font-bold mb-4">See Our Process Live</h3>
-							<button class="bg-[#00f2ea] text-black px-6 py-2 rounded-full font-bold text-sm shadow-[0_0_15px_rgba(0,242,234,0.5)]">Shop Now</button>
-						</div>
-					</div>
-					<!-- WhatsApp -->
-					<div class="reveal p-8 rounded-3xl bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white flex flex-col justify-between h-64 shadow-xl hover:scale-105 transition-transform cursor-pointer" style="transition-delay: 200ms">
-						<div class="flex justify-between items-start">
-							<span class="font-bold text-xl uppercase tracking-widest">Direct</span>
-							<span class="material-symbols-outlined text-4xl">chat</span>
-						</div>
-						<div>
-							<h3 class="text-2xl font-bold mb-4">Custom Bulk Orders</h3>
-							<button class="bg-white text-[#128C7E] px-6 py-2 rounded-full font-bold text-sm">Chat Now</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- FAQ -->
-		<section class="py-stack-lg container max-w-container-max mx-auto px-margin-mobile md:px-gutter max-w-3xl" id="faq">
-			<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Common Questions</h2>
-			<div class="space-y-stack-sm">
-				<div class="reveal bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden accordion-item">
-					<button class="w-full flex items-center justify-between p-stack-md text-left focus:outline-none" onclick="toggleAccordion(this)">
-						<span class="font-bold">What is the minimum order quantity?</span>
-						<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
-					</button>
-					<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-stack-md pb-0">
-						<p class="py-4 text-on-surface-variant">We have no minimum order quantity for most items! Whether you need one custom piece for yourself or 1,000 for your business, we've got you covered.</p>
-					</div>
-				</div>
-				<div class="reveal bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden accordion-item" style="transition-delay: 100ms">
-					<button class="w-full flex items-center justify-between p-stack-md text-left focus:outline-none" onclick="toggleAccordion(this)">
-						<span class="font-bold">How long does production take?</span>
-						<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
-					</button>
-					<div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-stack-md pb-0">
-						<p class="py-4 text-on-surface-variant">Standard production takes 3-5 business days after design approval. Bulk orders (100+) may take up to 10-14 days depending on complexity.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Footer -->
-		<footer class="bg-surface-container-highest dark:bg-surface-container-low full-width">
-			<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-md px-margin-mobile md:px-gutter py-stack-lg max-w-container-max mx-auto">
-				<div class="space-y-stack-sm">
+			</section>
+
+			<footer class="bg-surface-container-highest py-stack-lg px-gutter">
+				<div class="max-w-container-max mx-auto text-center">
 					<div class="font-display-lg text-headline-md font-bold text-on-surface">KeyCraft Custom</div>
-					<p class="text-on-surface-variant text-sm pr-4">Premium personalized maker excellence for everyday carry essentials.</p>
-					<p class="text-on-surface-variant text-sm">© 2024 KeyCraft Custom. All rights reserved.</p>
+					<p class="text-on-surface-variant text-sm mt-4">Premium personalized maker excellence.</p>
 				</div>
-				<div>
-					<h6 class="font-label-caps text-label-caps text-primary mb-4">Products</h6>
-					<ul class="space-y-2">
-						<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Acrylic Keychains</a></li>
-						<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Wooden Series</a></li>
-						<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">PVC Custom</a></li>
-						<li><a class="text-on-surface-variant hover:text-primary transition-transform inline-block hover:translate-x-1" href="#">Merchandise</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-		<!-- Floating WhatsApp -->
-		<a class="fixed bottom-gutter right-gutter bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform active:scale-95 group" href="https://wa.me/yournumber">
-			<span class="material-symbols-outlined text-4xl">chat</span>
-		</a>
-	</div>
+			</footer>
+		</div>
+	</section>
 
-	<!-- =========================================================================
-		 GLOBAL SCRIPTS
-		 ========================================================================= -->
 	<script is:inline>
 		// Mobile Menu Logic
-		const btn = document.getElementById('mobile-menu-btn-m');
-		const menu = document.getElementById('mobile-menu-m');
-		if(btn && menu) {
-			let isOpen = false;
-			btn.addEventListener('click', () => {
-				isOpen = !isOpen;
-				menu.classList.toggle('hidden');
-				btn.innerHTML = isOpen ? '<span class="material-symbols-outlined">close</span>' : '<span class="material-symbols-outlined">menu</span>';
-			});
-		}
+		const b = document.getElementById('mobile-menu-btn-m');
+		const m = document.getElementById('mobile-menu-m');
+		if(b && m) { b.addEventListener('click', () => m.classList.toggle('hidden')); }
 
-		// Accordion Logic
-		window.toggleAccordion = function(button) {
-			const item = button.parentElement;
-			const content = button.nextElementSibling;
-			const icon = button.querySelector('.material-symbols-outlined');
-			const isActive = item.classList.contains('active-accordion');
-			if(content) {
-				if (!isActive) {
-					item.classList.add('active-accordion');
-					content.style.maxHeight = content.scrollHeight + 'px';
-					if(icon) icon.style.transform = 'rotate(180deg)';
-				} else {
-					item.classList.remove('active-accordion');
-					content.style.maxHeight = '0';
-					if(icon) icon.style.transform = 'rotate(0deg)';
-				}
-			}
-		}
-
-		// Scroll reveal
+		// Reveal
 		const observer = new IntersectionObserver((entries) => {
-			entries.forEach(entry => {
-				if (entry.isIntersecting) {
-					entry.target.classList.add('active');
-				}
-			});
+			entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
 		}, { threshold: 0.1 });
 		document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 	</script>
