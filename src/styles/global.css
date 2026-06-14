@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* Breakpoints Saklek */
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
@@ -112,14 +111,15 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+}
 
-  .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  }
-  .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-  .reveal.active { opacity: 1; transform: translateY(0); }
-  .masonry { column-count: 2; column-gap: 24px; }
-  @media (min-width: 768px) { .masonry { column-count: 3; } }
+/* HARDCORE REVISI LOGIC */
+#desktop-view { display: none; }
+#mobile-view { display: block; }
+
+@media (min-width: 768px) {
+  #desktop-view { display: block !important; }
+  #mobile-view { display: none !important; }
 }
 
 html { scroll-behavior: smooth; }
@@ -127,8 +127,5 @@ body {
   background-color: var(--color-background);
   color: var(--color-on-background);
   font-family: var(--font-inter);
-  font-size: 16px;
-  line-height: 1.6;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
 }

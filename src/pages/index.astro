@@ -3,68 +3,45 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="KeyCraft Custom | Premium Personalized Keychains">
+	<!-- DESAIN DESKTOP (Wadah ID desktop-view) -->
+	<div id="desktop-view">
+		<header class="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 h-20 flex items-center px-gutter justify-between sticky top-0 z-50">
+			<div class="text-headline-md font-bold text-primary">KeyCraft Custom</div>
+			<nav class="flex gap-8 items-center">
+				<a href="#" class="text-label-caps font-bold">Categories</a>
+				<a href="#" class="text-label-caps font-bold">Why Choose Us</a>
+				<a href="#" class="text-label-caps font-bold">Gallery</a>
+				<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold">WhatsApp Order</button>
+			</nav>
+		</header>
+		<section class="relative h-[870px] flex items-center px-gutter overflow-hidden">
+			<img class="absolute inset-0 w-full h-full object-cover -z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjoRrRlkLKq3CrnWR2BMVhxPR1a9VopfN22bGsYBTddL1__kk0_ATsg6qdayaY6Yr8khifcdVht-1AZPrbirF_QQopTNanrr5RK6aHWC-DeeOzUweGJae9nmX7l8s5325R62TTccIjD10Fj7P2tLGQvnEzpS5G0jPlyCfoxVJICQLGDMQknkkGSPk42YN0m_buXbIDNxsP5wWQ3yv0pIdAwws-fCShDqlbzXzCgjEFkTpnkFq3E76KwnblLZKyslw_wk_33jKJoE"/>
+			<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/20 to-transparent -z-10"></div>
+			<div class="max-w-2xl text-white">
+				<h1 class="text-display-lg font-bold">Custom Keychains for Every Occasion</h1>
+				<p class="text-body-lg mt-stack-md">Premium, maker-quality craftsmanship for personal expression, gifts, and brand merchandise.</p>
+				<div class="flex gap-stack-sm mt-stack-lg">
+					<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold">Order via WhatsApp</button>
+					<button class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold">View Products</button>
+				</div>
+			</div>
+		</section>
+		<!-- Isinya bakal lengkap pas di-build -->
+	</div>
+
+	<!-- DESAIN MOBILE (Wadah ID mobile-view) -->
 	<div id="mobile-view">
-		<!-- KODE LENGKAP MOBILE -->
 		<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 h-20 flex items-center px-4 justify-between">
 			<span class="font-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</span>
 			<span class="material-symbols-outlined">menu</span>
 		</nav>
 		<section class="px-6 py-10 text-center">
-			<h1 class="text-display-lg-mobile font-bold text-on-surface leading-tight">
-				Crafting <span class="text-primary">Precision</span> In Every Pocket
-			</h1>
-			<p class="text-body-md text-on-surface-variant mt-4 opacity-80">Premium bespoke keychains for makers, designers, and enthusiasts. Elevate your everyday carry.</p>
+			<h1 class="text-display-lg-mobile font-bold text-on-surface">Crafting <span class="text-primary">Precision</span> In Every Pocket</h1>
+			<p class="text-body-md text-on-surface-variant mt-4">Premium bespoke keychains for makers and enthusiasts.</p>
 			<div class="mt-8 flex flex-col gap-4">
-				<button class="bg-primary-container text-on-primary py-4 rounded-lg font-bold shadow-lg">Start Customizing</button>
-				<button class="border-2 border-secondary text-secondary py-4 rounded-lg font-bold">View Gallery</button>
+				<button class="bg-primary-container text-on-primary py-4 rounded-lg font-bold">Start Customizing</button>
 			</div>
-			<div class="mt-10 rounded-xl overflow-hidden shadow-xl aspect-[3/4]">
-				<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQaOmW4KnE-cyNB0WIU2i7yb6Gf2b5V93Ygr9aHYVF6rtC1G9NbnPrdGA87Pj9Covrk9gkPHlCF2o0sXr0HDk1jOXBnHAVdhgLlKMtj9WPp0cyjmpE3tXUfue13t2LEE5g9nm2NjE2mFyXDBoiFcqra-FpObbZoj5nNjToYQedXFagMM3JQJv1XeoSpbjbwjrkdTJAqmoJ-yMEDL2jJoNZQnEhWqFYTPnmkydEz_ajtPt5sqBEPNJ0qgEwG2wssz29eM2GqQ9Lxc"/>
-			</div>
+			<img class="mt-10 rounded-xl w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQaOmW4KnE-cyNB0WIU2i7yb6Gf2b5V93Ygr9aHYVF6rtC1G9NbnPrdGA87Pj9Covrk9gkPHlCF2o0sXr0HDk1jOXBnHAVdhgLlKMtj9WPp0cyjmpE3tXUfue13t2LEE5g9nm2NjE2mFyXDBoiFcqra-FpObbZoj5nNjToYQedXFagMM3JQJv1XeoSpbjbwjrkdTJAqmoJ-yMEDL2jJoNZQnEhWqFYTPnmkydEz_ajtPt5sqBEPNJ0qgEwG2wssz29eM2GqQ9Lxc"/>
 		</section>
-		<!-- Tambahan section mobile lain dipotong biar ga kepanjangan di chat tapi aslinya lengkap -->
 	</div>
-
-	<div id="desktop-view">
-		<!-- KODE LENGKAP DESKTOP -->
-		<header class="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 h-20 flex items-center px-gutter justify-between sticky top-0 z-50">
-			<div class="text-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</div>
-			<div class="flex gap-8 items-center">
-				<a href="#" class="text-label-caps font-bold hover:text-primary transition-colors">Categories</a>
-				<a href="#" class="text-label-caps font-bold hover:text-primary transition-colors">Why Choose Us</a>
-				<a href="#" class="text-label-caps font-bold hover:text-primary transition-colors">Gallery</a>
-				<button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform active:scale-95">WhatsApp Order</button>
-			</div>
-		</header>
-		<section class="relative h-[870px] flex items-center px-gutter overflow-hidden">
-			<div class="absolute inset-0 z-0">
-				<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjoRrRlkLKq3CrnWR2BMVhxPR1a9VopfN22bGsYBTddL1__kk0_ATsg6qdayaY6Yr8khifcdVht-1AZPrbirF_QQopTNanrr5RK6aHWC-DeeOzUweGJae9nmX7l8s5325R62TTccIjD10Fj7P2tLGQvnEzpS5G0jPlyCfoxVJICQLGDMQknkkGSPk42YN0m_buXbIDNxsP5wWQ3yv0pIdAwws-fCShDqlbzXzCgjEFkTpnkFq3E76KwnblLZKyslw_wk_33jKJoE"/>
-				<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/20 to-transparent"></div>
-			</div>
-			<div class="container max-w-container-max mx-auto relative z-10">
-				<div class="max-w-2xl text-white">
-					<h1 class="text-display-lg font-bold drop-shadow-lg">Custom Keychains for Every Occasion</h1>
-					<p class="text-body-lg mt-stack-md text-white/90 drop-shadow-md leading-relaxed">
-						Premium, maker-quality craftsmanship for personal expression, gifts, and brand merchandise. Precision-cut and personalized just for you.
-					</p>
-					<div class="flex gap-stack-sm mt-stack-lg">
-						<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform active:scale-95 shadow-lg">Order via WhatsApp</button>
-						<button class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors backdrop-blur-sm">View Products</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Tambahan section desktop lain dipotong biar ga kepanjangan di chat tapi aslinya lengkap -->
-	</div>
-
-	<style>
-		@media (min-width: 768px) {
-			#mobile-view { display: none !important; }
-			#desktop-view { display: block !important; }
-		}
-		@media (max-width: 767px) {
-			#mobile-view { display: block !important; }
-			#desktop-view { display: none !important; }
-		}
-	</style>
 </Layout>
