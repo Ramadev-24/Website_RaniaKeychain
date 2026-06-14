@@ -3,117 +3,57 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="KeyCraft Custom | Premium Personalized Keychains">
-	<!-- DESAIN MOBILE (ONLY MOBILE) -->
-	<section class="md:hidden contents">
-		<div class="block w-full">
-			<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 shadow-sm w-full">
-				<div class="flex justify-between items-center px-margin-mobile h-20 w-full">
-					<span class="font-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</span>
-					<button aria-label="Toggle Menu" class="text-on-surface p-2" id="mobile-menu-btn-m">
-						<span class="material-symbols-outlined">menu</span>
-					</button>
-				</div>
-				<div class="hidden absolute top-20 left-0 w-full bg-surface border-b border-outline-variant/30 px-margin-mobile py-stack-md flex flex-col gap-4 shadow-xl" id="mobile-menu-m">
-					<a class="text-primary font-bold py-2 text-label-caps" href="#categories">Categories</a>
-					<a class="text-on-surface-variant font-medium py-2 text-label-caps" href="#why-choose-us">Why Choose Us</a>
-					<a class="text-on-surface-variant font-medium py-2 text-label-caps" href="#gallery">Gallery</a>
-					<button class="bg-primary-container text-on-primary w-full py-4 rounded-lg font-bold mt-2">WhatsApp Order</button>
-				</div>
-			</nav>
+	<div id="mobile-view">
+		<!-- SELURUH KODE MOBILE DISINI -->
+		<nav class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 h-20 flex items-center px-4 justify-between">
+			<span class="font-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</span>
+			<span class="material-symbols-outlined">menu</span>
+		</nav>
+		<section class="px-6 py-10 text-center">
+			<h1 class="text-display-lg-mobile font-bold text-on-surface leading-tight">
+				Crafting <span class="text-primary">Precision</span> In Every Pocket
+			</h1>
+			<p class="text-body-md text-on-surface-variant mt-4">Premium bespoke keychains for makers and enthusiasts.</p>
+			<div class="mt-8 flex flex-col gap-4">
+				<button class="bg-primary-container text-on-primary py-4 rounded-lg font-bold">Start Customizing</button>
+			</div>
+			<img class="mt-10 rounded-xl w-full shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQaOmW4KnE-cyNB0WIU2i7yb6Gf2b5V93Ygr9aHYVF6rtC1G9NbnPrdGA87Pj9Covrk9gkPHlCF2o0sXr0HDk1jOXBnHAVdhgLlKMtj9WPp0cyjmpE3tXUfue13t2LEE5g9nm2NjE2mFyXDBoiFcqra-FpObbZoj5nNjToYQedXFagMM3JQJv1XeoSpbjbwjrkdTJAqmoJ-yMEDL2jJoNZQnEhWqFYTPnmkydEz_ajtPt5sqBEPNJ0qgEwG2wssz29eM2GqQ9Lxc"/>
+		</section>
+	</div>
 
-			<section class="px-margin-mobile pt-stack-md pb-stack-lg flex flex-col items-center text-center">
-				<h1 class="text-display-lg-mobile text-on-surface mb-stack-sm tracking-tight">
-					Crafting <span class="text-primary">Precision</span> In Every Pocket
-				</h1>
-				<p class="text-body-md text-on-surface-variant mb-stack-md">
-					Premium bespoke keychains for makers, designers, and enthusiasts.
-				</p>
-				<div class="flex flex-col gap-4 w-full">
-					<button class="bg-primary-container text-on-primary font-bold py-4 rounded-lg">Start Customizing</button>
-					<button class="border-2 border-secondary text-secondary font-bold py-4 rounded-lg">View Gallery</button>
+	<div id="desktop-view">
+		<!-- SELURUH KODE DESKTOP DISINI -->
+		<header class="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 h-20 flex items-center px-gutter justify-between sticky top-0 z-50">
+			<div class="text-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</div>
+			<div class="flex gap-8 items-center">
+				<a href="#" class="text-label-caps font-bold">Categories</a>
+				<a href="#" class="text-label-caps font-bold">Why Choose Us</a>
+				<a href="#" class="text-label-caps font-bold">Gallery</a>
+				<button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-bold">WhatsApp Order</button>
+			</div>
+		</header>
+		<section class="relative h-[800px] flex items-center px-gutter overflow-hidden">
+			<img class="absolute inset-0 w-full h-full object-cover -z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjoRrRlkLKq3CrnWR2BMVhxPR1a9VopfN22bGsYBTddL1__kk0_ATsg6qdayaY6Yr8khifcdVht-1AZPrbirF_QQopTNanrr5RK6aHWC-DeeOzUweGJae9nmX7l8s5325R62TTccIjD10Fj7P2tLGQvnEzpS5G0jPlyCfoxVJICQLGDMQknkkGSPk42YN0m_buXbIDNxsP5wWQ3yv0pIdAwws-fCShDqlbzXzCgjEFkTpnkFq3E76KwnblLZKyslw_wk_33jKJoE"/>
+			<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent -z-10"></div>
+			<div class="max-w-2xl text-white">
+				<h1 class="text-display-lg font-bold drop-shadow-xl">Custom Keychains for Every Occasion</h1>
+				<p class="text-body-lg mt-6 opacity-90">Premium, maker-quality craftsmanship for personal expression, gifts, and brand merchandise.</p>
+				<div class="mt-10 flex gap-4">
+					<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold">Order via WhatsApp</button>
 				</div>
-				<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden mt-stack-md">
-					<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQaOmW4KnE-cyNB0WIU2i7yb6Gf2b5V93Ygr9aHYVF6rtC1G9NbnPrdGA87Pj9Covrk9gkPHlCF2o0sXr0HDk1jOXBnHAVdhgLlKMtj9WPp0cyjmpE3tXUfue13t2LEE5g9nm2NjE2mFyXDBoiFcqra-FpObbZoj5nNjToYQedXFagMM3JQJv1XeoSpbjbwjrkdTJAqmoJ-yMEDL2jJoNZQnEhWqFYTPnmkydEz_ajtPt5sqBEPNJ0qgEwG2wssz29eM2GqQ9Lxc"/>
-				</div>
-			</section>
+			</div>
+		</section>
+	</div>
 
-			<footer class="bg-surface-container-highest py-10 px-margin-mobile text-center">
-				<span class="font-display-lg text-headline-md font-bold text-on-surface">KeyCraft Custom</span>
-				<p class="text-on-surface-variant text-label-caps mt-4">© 2024 KeyCraft Custom.</p>
-			</footer>
-		</div>
-	</section>
-
-	<!-- DESAIN DESKTOP (ONLY DESKTOP) -->
-	<section class="hidden md:contents">
-		<div class="block w-full">
-			<header class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm sticky top-0 z-50">
-				<nav class="flex justify-between items-center px-gutter max-w-container-max mx-auto h-20 w-full">
-					<div class="text-display-lg text-headline-md font-bold text-primary">KeyCraft Custom</div>
-					<div class="flex items-center gap-stack-md">
-						<a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-caps" href="#categories">Categories</a>
-						<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-caps" href="#why-choose-us">Why Choose Us</a>
-						<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-caps" href="#gallery">Gallery</a>
-					</div>
-					<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform">WhatsApp Order</button>
-				</nav>
-			</header>
-
-			<section class="relative h-[870px] flex items-center overflow-hidden">
-				<div class="absolute inset-0 z-0">
-					<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjoRrRlkLKq3CrnWR2BMVhxPR1a9VopfN22bGsYBTddL1__kk0_ATsg6qdayaY6Yr8khifcdVht-1AZPrbirF_QQopTNanrr5RK6aHWC-DeeOzUweGJae9nmX7l8s5325R62TTccIjD10Fj7P2tLGQvnEzpS5G0jPlyCfoxVJICQLGDMQknkkGSPk42YN0m_buXbIDNxsP5wWQ3yv0pIdAwws-fCShDqlbzXzCgjEFkTpnkFq3E76KwnblLZKyslw_wk_33jKJoE"/>
-					<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/20 to-transparent"></div>
-				</div>
-				<div class="container max-w-container-max mx-auto px-gutter relative z-10">
-					<div class="max-w-2xl text-white">
-						<h1 class="text-display-lg mb-stack-sm drop-shadow-lg">
-							Custom Keychains for Every Occasion
-						</h1>
-						<p class="text-body-lg mb-stack-md text-white/90 drop-shadow-md">
-							Premium, maker-quality craftsmanship for personal expression, gifts, and brand merchandise. Precision-cut and personalized just for you.
-						</p>
-						<div class="flex gap-stack-sm">
-							<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold shadow-lg">Order via WhatsApp</button>
-							<button class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold backdrop-blur-sm">View Products</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="py-stack-lg container max-w-container-max mx-auto px-gutter" id="categories-desktop">
-				<h2 class="text-display-lg text-headline-md text-center mb-stack-lg">Our Collections</h2>
-				<div class="grid grid-cols-4 gap-gutter">
-					<div class="reveal group bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden shadow-sm">
-						<div class="h-64 overflow-hidden">
-							<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLPQM99haJyRfdwx6xYxXM-BcT7dPohA0DDkuv_YESeJb6TbTqYVylfCAOG-rIGkQ6122oByRKyYbNSKQo5W5mekTrWLW5CD6Awf4Fli-opmo99MVce5Zlajm-sJCxlmkmI11h3oDV22SmNoVKE-DFtN5fJ67CDWNjaaSv7wHYyv-z1SrllJDuWsl-J4uKf3nqhqmCpPLKaJJhB1CgavZjrBP1kV_ncz-UOPZhyJSnLQk5sXfySDGbowVEgyztq-J9tdAgMmmltAo"/>
-						</div>
-						<div class="p-stack-md">
-							<h3 class="font-headline-md text-primary mb-2">Acrylic Series</h3>
-							<p class="text-on-surface-variant text-sm">Vibrant, durable, and crystal-clear prints.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer class="bg-surface-container-highest py-stack-lg px-gutter">
-				<div class="max-w-container-max mx-auto text-center">
-					<div class="font-display-lg text-headline-md font-bold text-on-surface">KeyCraft Custom</div>
-					<p class="text-on-surface-variant text-sm mt-4">Premium personalized maker excellence.</p>
-				</div>
-			</footer>
-		</div>
-	</section>
-
-	<script is:inline>
-		// Mobile Menu Logic
-		const b = document.getElementById('mobile-menu-btn-m');
-		const m = document.getElementById('mobile-menu-m');
-		if(b && m) { b.addEventListener('click', () => m.classList.toggle('hidden')); }
-
-		// Reveal
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-		}, { threshold: 0.1 });
-		document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-	</script>
+	<style>
+		/* HARDCORE HIDDEN LOGIC */
+		@media (min-width: 768px) {
+			#mobile-view { display: none !important; }
+			#desktop-view { display: block !important; }
+		}
+		@media (max-width: 767px) {
+			#mobile-view { display: block !important; }
+			#desktop-view { display: none !important; }
+		}
+	</style>
 </Layout>
